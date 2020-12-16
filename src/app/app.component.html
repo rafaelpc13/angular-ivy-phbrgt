@@ -1,0 +1,7 @@
+<h1> Gato o Perro App </h1>
+<p> Qué prefieres? </p>
+<input [(ngModel)]="animal" type="text"/>
+
+<img *ngIf="animal === 'gato'" src="https://thecatapi.com/api/images/get?format=src&type=gif ">
+
+<img *ngIf="animal === 'perro'" src="https://api.thedogapi.com/v1/images/search?format=src&mime_types=image/gif">
